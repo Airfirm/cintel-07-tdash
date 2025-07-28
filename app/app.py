@@ -89,12 +89,18 @@ with ui.layout_columns():
 
         @render.plot
         def length_depth():
-            return sns.scatterplot( # Create scatter plot
+            return sns.scatterplot(  # Create scatter plot
                 data=filtered_df(),
                 x="bill_length_mm",
                 y="bill_depth_mm",
-                hue="species", # Color by species
+                hue="species",  # Color by species
+                palette={
+                    "Adelie": "purple",
+                    "Gentoo": "orange",
+                    "Chinstrap": "green"
+                }
             )
+
 
     # Card showing penguin data grid
     with ui.card(full_screen=True):
