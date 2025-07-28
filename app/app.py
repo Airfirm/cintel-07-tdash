@@ -28,17 +28,17 @@ with ui.sidebar(title="Filter controls"):
     ui.h6("Links")
     ui.a(
         "GitHub Source",
-        href="https://github.com/denisecase/cintel-07-tdash",
+        href="https://github.com/Airfirm/cintel-07-tdash",
         target="_blank",
     )
     ui.a(
         "GitHub App",
-        href="https://denisecase.github.io/cintel-07-tdash/",
+        href="https://airfirm.github.io/cintel-07-tdash/",
         target="_blank",
     )
     ui.a(
         "GitHub Issues",
-        href="https://github.com/denisecase/cintel-07-tdash/issues",
+        href="https://github.com/Airfirm/cintel-07-tdash/issues",
         target="_blank",
     )
     ui.a("PyShiny", href="https://shiny.posit.co/py/", target="_blank")
@@ -49,7 +49,7 @@ with ui.sidebar(title="Filter controls"):
     )
     ui.a(
         "See also",
-        href="https://github.com/denisecase/pyshiny-penguins-dashboard-express",
+        href="https://www.meetup.com/pymntos-twin-cities-python-user-group/",
         target="_blank",
     )
 
