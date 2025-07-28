@@ -5,6 +5,7 @@ from shiny import reactive
 from shiny.express import input, render, ui
 from shinywidgets import render_plotly  # Added for Plotly support
 import palmerpenguins
+import plotly 
 
 # Load penguins dataset into a DataFrame
 df = palmerpenguins.load_penguins()
