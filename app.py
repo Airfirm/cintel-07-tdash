@@ -28,17 +28,17 @@ with ui.sidebar(title="Filter controls"):
     ui.h6("Links")
     ui.a(
         "GitHub Source",
-        href="https://github.com/denisecase/cintel-07-tdash",
+        href="https://github.com/Airfirm/cintel-07-tdash",
         target="_blank",
     )
     ui.a(
         "GitHub App",
-        href="https://denisecase.github.io/cintel-07-tdash/",
+        href="https://airfirm.github.io/cintel-07-tdash/",
         target="_blank",
     )
     ui.a(
         "GitHub Issues",
-        href="https://github.com/denisecase/cintel-07-tdash/issues",
+        href="https://github.com/Airfirm/cintel-07-tdash/issues",
         target="_blank",
     )
     ui.a("PyShiny", href="https://shiny.posit.co/py/", target="_blank")
@@ -49,7 +49,7 @@ with ui.sidebar(title="Filter controls"):
     )
     ui.a(
         "See also",
-        href="https://github.com/denisecase/pyshiny-penguins-dashboard-express",
+        href="https://www.meetup.com/pymntos-twin-cities-python-user-group/",
         target="_blank",
     )
 
@@ -89,12 +89,18 @@ with ui.layout_columns():
 
         @render.plot
         def length_depth():
-            return sns.scatterplot( # Create scatter plot
+            return sns.scatterplot(  # Create scatter plot
                 data=filtered_df(),
                 x="bill_length_mm",
                 y="bill_depth_mm",
-                hue="species", # Color by species
+                hue="species",  # Color by species
+                palette={
+                    "Adelie": "purple",
+                    "Gentoo": "orange",
+                    "Chinstrap": "green"
+                }
             )
+
 
     # Card showing penguin data grid
     with ui.card(full_screen=True):
