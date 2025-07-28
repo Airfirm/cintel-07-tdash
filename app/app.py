@@ -1,4 +1,6 @@
 # Import necessary libraries for the dashboard
+import micropip
+await micropip.install("plotly")
 import plotly.express as px  # Replaced seaborn with plotly
 from faicons import icon_svg
 from shiny import reactive
