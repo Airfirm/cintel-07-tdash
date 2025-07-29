@@ -57,7 +57,7 @@ with ui.sidebar(title="Filter controls"):
 with ui.layout_column_wrap(fill=False):
 
     # Value box showing number of penguins
-    with ui.value_box(showcase=icon_svg("countdown")): # earlybirds
+    with ui.value_box(showcase=icon_svg("earlybirds")):
         "Number of penguins"
 
         @render.text
@@ -65,7 +65,7 @@ with ui.layout_column_wrap(fill=False):
             return filtered_df().shape[0] # Number of rows in filtered DataFrame
         
     # Value box showing average bill length
-    with ui.value_box(showcase=icon_svg("medium")): # ruler-horizontal
+    with ui.value_box(showcase=icon_svg("ruler-horizontal")):
         "Average bill length"
 
         @render.text
@@ -73,7 +73,7 @@ with ui.layout_column_wrap(fill=False):
             return f"{filtered_df()['bill_length_mm'].mean():.1f} mm" # Calculate mean bill length
         
     # Value box showing average bill depth
-    with ui.value_box(showcase=icon_svg("medium")): # ruler-vertical
+    with ui.value_box(showcase=icon_svg("ruler-vertical")):
         "Average bill depth"
 
         @render.text
