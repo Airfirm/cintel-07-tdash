@@ -1,6 +1,93 @@
 # cintel-07-tdash
 
 # PyShiny Basic Dashboard (Penguins)
+
+---
+
+# 🐧 Penguins Dashboard – Module 7
+
+A PyShiny-based interactive dashboard that visualizes and analyzes the **Palmer Penguins dataset**. This application allows users to filter penguins by species and mass, view summary statistics, and explore visualizations with a responsive UI powered by [PyShiny](https://shiny.posit.co/py/).
+
+## 📊 Features
+
+* Interactive **checkbox filter** for penguin species (Adelie, Gentoo, Chinstrap)
+* Mass filtering using a slider (editable if uncommented)
+* Value boxes displaying:
+
+  * Total number of penguins (after filtering)
+  * Average bill length
+  * Average bill depth
+* Seaborn-based **scatterplot** showing bill length vs. bill depth, color-coded by species
+* Interactive **data grid** of penguin metrics (island, bill, mass)
+* External resource links in the sidebar for documentation and reference
+
+## 🚀 Getting Started
+
+### 🔧 Installation
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/Airfirm/cintel-07-tdash.git
+cd cintel-07-tdash
+```
+
+2. Install dependencies:
+
+```bash
+pip install shiny faicons palmerpenguins seaborn
+```
+
+> Optionally, use a `requirements.txt` file if you prefer pinned versions.
+
+### ▶️ Run the App
+
+```bash
+shiny run --reload app.py
+```
+
+The app will be available at `http://localhost:8000`.
+
+## 📁 File Structure
+
+```
+.
+├── app.py            # Main PyShiny dashboard application
+├── README.md         # Project documentation
+└── requirements.txt  # Optional: list of dependencies
+```
+
+## 🔗 Useful Links
+
+* [GitHub Source](https://github.com/Airfirm/cintel-07-tdash)
+* [Live App](https://airfirm.github.io/cintel-07-tdash/)
+* [File Issues](https://github.com/Airfirm/cintel-07-tdash/issues)
+* [PyShiny Documentation](https://shiny.posit.co/py/)
+* [Basic Dashboard Template](https://shiny.posit.co/py/templates/dashboard/)
+* [Python Meetups - PyMNtos](https://www.meetup.com/pymntos-twin-cities-python-user-group/)
+
+## 📦 Dependencies
+
+* `shiny`
+* `faicons`
+* `palmerpenguins`
+* `seaborn`
+* `shinylive`
+* `seaborn`
+* `pandas`
+* `plotly`
+* `shinywidgets`
+* `plotly.express`
+
+Install them all using:
+
+```bash
+pip install shiny faicons palmerpenguins seaborn
+```
+
+---
+
+
 ## Project Communication Starts with README.md
 The README.md file introduces our project. It's the first file visitors see and a well-crafted README is engaging and useful, providing an overview, and concise instructions.
 
