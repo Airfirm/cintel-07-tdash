@@ -58,7 +58,7 @@ with ui.layout_column_wrap(fill=False):
 
     # Value box showing number of penguins
     with ui.value_box(showcase=icon_svg("earlybirds")):
-        "Number of penguins"
+        "Number of Penguins"
 
         @render.text
         def count():
@@ -66,7 +66,7 @@ with ui.layout_column_wrap(fill=False):
         
     # Value box showing average bill length
     with ui.value_box(showcase=icon_svg("ruler-horizontal")):
-        "Average bill length"
+        "Average Bill Length"
 
         @render.text
         def bill_length():
@@ -74,7 +74,7 @@ with ui.layout_column_wrap(fill=False):
         
     # Value box showing average bill depth
     with ui.value_box(showcase=icon_svg("ruler-vertical")):
-        "Average bill depth"
+        "Average Bill Depth"
 
         @render.text
         def bill_depth():
@@ -85,7 +85,7 @@ with ui.layout_columns():
 
     # Card showing bill length vs depth scatter plot
     with ui.card(full_screen=True):
-        ui.card_header("Bill length and depth")
+        ui.card_header("Bill Length vs Bill Depth")
 
         @render.plot
         def length_depth():
